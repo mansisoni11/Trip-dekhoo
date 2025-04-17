@@ -1,0 +1,91 @@
+.temp-main-TD{
+    background-color: black;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.logo-top-left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 150px; /* or adjust based on your logo size */
+    height: auto;
+  }
+  
+.Heading_temp-main-TD{
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+.para-main-TD{
+    color: #fcc70c;
+}
+.Heading_temp-main-TD h1{
+    font-size: 50px;
+}
+.Info_temp-main-TD{
+ text-align: center;
+    align-items: center;
+    font-size: 20px;
+}
+.button-temp {
+    border: 1px solid #5b53fb;
+    background: transparent;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .button-temp::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #5b53fb, #7269ff);
+    z-index: -1;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+  }
+  
+  .button-temp:hover::before {
+    opacity: 1;
+  }
+  
+  .button-temp:hover {
+    color: white;
+    
+  }
+  .button-temp:active {
+    transform: scale(0.97);
+  }
+  
+.icon-box{
+    gap: 10px;
+    vertical-align: middle;
+}
+.divider-social{
+    width: 7vw;
+}
+@media (max-width: 768px) {
+    .logo-top-right {
+      width: 70px;
+      top: 15px;
+      right: 15px;
+    }
+    .Heading_temp-main-TD h1{
+        font-size: 30px;
+    }
+    .Info_temp-main-TD{
+        font-size: 1rem;
+    }
+  }
+  

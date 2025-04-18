@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaLinkedin, FaLocationArrow, FaTwitter, FaYoutube } from "react-icons/fa";
 import Logo from '../src/assets/Logo1.png'
 import './temp.css'
 const Temp = () => {
@@ -8,6 +8,9 @@ const Temp = () => {
         instagram: 'https://www.instagram.com/tripdekhoo.com_',
         twitter: 'https://x.com/tripdekhoo',
         facebook: 'https://www.facebook.com/people/Tripdekhoocom/61570067206336/',
+        youtube:'https://www.youtube.com/@tripdekhoo',
+        location:"https://maps.app.goo.gl/F5rvCAM5a6u9Lgu37",
+        linkedin:"https://www.linkedin.com/company/tripdekhoo-com/"
       };
       const openLink = (url) => {
         window.open(url, '_blank');
@@ -54,6 +57,10 @@ const Temp = () => {
         <FaFacebookF color='#5b53fb' onClick={() => openLink(socialLinks.facebook)} />
         <FaTwitter color='#5b53fb'  onClick={() => openLink(socialLinks.twitter)} />
         <FaInstagram color='#5b53fb' onClick={() => openLink(socialLinks.instagram)} />
+        <FaYoutube color='#5b53fb' onClick={() => openLink(socialLinks.youtube)}/>
+        <FaLocationArrow color='#5b53fb' onClick={() => openLink(socialLinks.location)}/>
+        <FaLinkedin color='#5b53fb' onClick={() => openLink(socialLinks.linkedin)}/>
+
       </div>
     </div>
     

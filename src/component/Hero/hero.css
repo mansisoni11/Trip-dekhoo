@@ -1,0 +1,23 @@
+.hero-slide {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+  }
+  
+  .overlay-content {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  
+  .search-bar .form-control {
+    border-radius: 0;
+  }
+  
+  .search-bar .input-group-text {
+    cursor: pointer;
+    border-radius: 0;
+  }
+  
+  

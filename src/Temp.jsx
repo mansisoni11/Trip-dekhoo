@@ -37,7 +37,7 @@ const Temp = () => {
     <img src={Logo} alt="Logo" className="logo-top-left" /></div>
     <div className="text-white d-flex Heading_temp-main-TD">
     <h1>Site is Under Re-Development</h1>
-    <p className="para-main-TD" style={{fontSize:window.innerWidth<=768 ?"14px" :"24px"}}>
+    <p className="para-main-TD">
     We're gearing up to relaunch in the first week of May 2025
   </p>
   <p className="Info_temp-main-TD">
@@ -46,22 +46,24 @@ const Temp = () => {
         <span className="text-warning">Feel free to reach out to us via WhatsApp or email.</span>
       </p>
       <button className='btn button-temp mt-4' onClick={handleWhatsAppClick}>
-      CONTACT US
+      Enquiry Now
       </button>
       <div className="d-flex align-items-center mt-2 gap-3">
       <p className="mt-3 text-bold" style={{fontSize:"15px"}}>GET SOCIAL</p>
       <div className="flex-grow-1">
         <hr className="mx-2 my-2 border-light divider-social" />
       </div>
-      <div className="d-flex gap-3 icon-box">
-        <FaFacebookF color='#5b53fb' onClick={() => openLink(socialLinks.facebook)} />
-        <FaTwitter color='#5b53fb'  onClick={() => openLink(socialLinks.twitter)} />
-        <FaInstagram color='#5b53fb' onClick={() => openLink(socialLinks.instagram)} />
-        <FaYoutube color='#5b53fb' onClick={() => openLink(socialLinks.youtube)}/>
-        <FaLocationArrow color='#5b53fb' onClick={() => openLink(socialLinks.location)}/>
-        <FaLinkedin color='#5b53fb' onClick={() => openLink(socialLinks.linkedin)}/>
-
-      </div>
+      <div className="d-flex flex-wrap gap-3 icon-box">
+   
+      <FaFacebookF className="icon" color='#5b53fb' onClick={() => openLink(socialLinks.facebook)} />
+      <FaTwitter className="icon" color='#5b53fb' onClick={() => openLink(socialLinks.twitter)} />
+      <FaInstagram className="icon" color='#5b53fb' onClick={() => openLink(socialLinks.instagram)} />
+      <FaYoutube className="icon" color='#5b53fb' onClick={() => openLink(socialLinks.youtube)} />
+      <FaLocationArrow className="icon" color='#5b53fb' onClick={() => openLink(socialLinks.location)} />
+      <FaLinkedin className="icon" color='#5b53fb' onClick={() => openLink(socialLinks.linkedin)} />
+  </div>
+  
+     
     </div>
     
     </div>

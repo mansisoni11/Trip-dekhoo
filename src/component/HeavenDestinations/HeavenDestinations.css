@@ -1,0 +1,267 @@
+/* Header styles */
+.heaven-destinations header {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+.main-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.escape-text {
+  font-size: 2.5rem;
+  color: #000;
+  display: block;
+}
+
+.heaven-text {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4rem;
+  color: #8a57de;
+  display: block;
+  margin-top: -15px;
+}
+
+.main-description {
+  font-size: 1.1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #555;
+}
+
+/* Destinations showcase section */
+.destinations-showcase {
+  background-color: #fff;
+  padding: 20px 0 60px;
+  overflow: hidden;
+}
+
+/* Destination styles */
+.destination-slide {
+  width: 300px;
+  height: 380px;
+  transition: all 0.3s ease;
+}
+
+.destination-cardss {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  transition: all 0.5s ease;
+  height: 350px;
+  transform-origin: center;
+  transform: scale(0.9);
+}
+
+.destination-cardss.active {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  height: 380px;
+}
+
+.destination-image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.destination-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.destination-cardss:hover .destination-image img {
+  transform: scale(1.1);
+}
+
+.destination-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  color: #fff;
+  padding: 20px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.namedestination {
+  margin: 0;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.destination-cardss.active .namedestination {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.destination-description {
+  opacity: 0;
+  height: 0;
+  font-size: 0.95rem;
+  text-align: center;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+
+.destination-cardss.active .destination-description {
+  opacity: 1;
+  height: auto;
+  margin-top: 5px;
+}
+
+/* Swiper customization */
+.destinations-slider {
+  padding: 30px 0 50px;
+  overflow: visible;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #8a57de !important;
+  background: rgba(255, 255, 255, 0.7);
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 18px !important;
+  font-weight: bold;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #8a57de !important;
+  opacity: 1;
+  width: 12px;
+  height: 12px;
+}
+
+/* Explore button */
+.btn-explore {
+  background-color: #8a57de;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(138, 87, 222, 0.3);
+}
+
+.btn-explore:hover {
+  background-color: #7642d1;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(138, 87, 222, 0.4);
+}
+
+/* Animation for cards */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.destination-cardss {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+  .escape-text {
+    font-size: 2rem;
+  }
+  
+  .heaven-text {
+    font-size: 3.5rem;
+  }
+  
+  .main-description {
+    font-size: 1rem;
+    padding: 0 15px;
+  }
+  
+  .destination-slide {
+    width: 270px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .escape-text {
+    font-size: 1.8rem;
+  }
+  
+  .heaven-text {
+    font-size: 3rem;
+  }
+  
+  .destination-slide {
+    width: 240px;
+  }
+  
+  .destination-cardss {
+    height: 320px;
+  }
+  
+  .destination-cardss.active {
+    height: 340px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .escape-text {
+    font-size: 1.5rem;
+  }
+  
+  .heaven-text {
+    font-size: 2.5rem;
+  }
+  
+  .main-description {
+    font-size: 0.9rem;
+  }
+  
+  .destination-slide {
+    width: 220px;
+  }
+  
+  .destination-cardss {
+    height: 300px;
+  }
+  
+  .destination-cardss.active {
+    height: 320px;
+  }
+  
+  .namedestination {
+    font-size: 1.3rem;
+  }
+  
+  .destination-cardss.active .namedestination {
+    font-size: 1.5rem;
+  }
+}

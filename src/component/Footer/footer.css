@@ -1,0 +1,55 @@
+.footer_left_Section_1{
+    color: #8c52ff ;
+    }
+    .footer_left_Section_contactus{
+        color: #8c52ff ;
+    font-size: 40px;
+    font-weight: 700;
+    }
+    .Form_bottom{
+        border-bottom: 1px dotted black !important;
+    }
+    .button-Footer{
+        border: 1px solid #8c52ff;
+        background: transparent;
+        color: #8c52ff;
+        padding: 10px 20px;
+        font-weight: 600;
+        border-radius: 6px;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;   
+    }
+    .button-Footer::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, #8c52ff, #7269ff);
+        z-index: -1;
+        transition: opacity 0.3s ease;
+        opacity: 0;
+      }
+      
+      .button-Footer:hover::before {
+        opacity: 1;
+      }
+      
+      .button-Footer:hover {
+        color: white;
+      }
+      .button-Footer:active {
+        transform: scale(0.97);
+      }
+     .icon {
+        transition: transform 0.3s ease, color 0.3s ease;
+        cursor: pointer;
+      }
+      
+       .icon:hover {
+        transform: scale(2.3);  /* Slight zoom effect */
+        color: #8c52ff;         /* Change to a different color on hover */
+      }

@@ -1,0 +1,12 @@
+.Faq_heading, .faq_opener{
+color: #8c52ff;
+}
+.Faq_heading{
+    font-size: 3rem;
+}
+.faq_subheading{
+    font-family: 'Pacifico', cursive;
+    font-size: 1.2rem;
+   font-weight: 700;
+
+}

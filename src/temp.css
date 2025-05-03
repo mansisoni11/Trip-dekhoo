@@ -7,9 +7,9 @@
 }
 .logo-top-left {
     position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 150px; /* or adjust based on your logo size */
+    top: 35px;
+    left: 35px;
+    width: 150px; 
     height: auto;
   }
   
@@ -17,19 +17,25 @@
 flex-direction: column;
 justify-content: center;
 align-items: center;
+padding: 15px;
+text-align: center;
 
 }
 .para-main-TD{
     color: #fcc70c;
+    font-size: 20px;
+    text-align: center;
 }
 .Heading_temp-main-TD h1{
     font-size: 50px;
+    text-align: center;
 }
 .Info_temp-main-TD{
  text-align: center;
     align-items: center;
     font-size: 20px;
 }
+
 .button-temp {
     border: 1px solid #5b53fb;
     background: transparent;
@@ -62,12 +68,21 @@ align-items: center;
   
   .button-temp:hover {
     color: white;
-    
+
   }
   .button-temp:active {
     transform: scale(0.97);
   }
-  
+  .icon-box .icon {
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.icon-box .icon:hover {
+  transform: scale(2.3);  /* Slight zoom effect */
+  color: #3b5bfb;         /* Change to a different color on hover */
+}
+
 .icon-box{
     gap: 10px;
     vertical-align: middle;
@@ -76,16 +91,35 @@ align-items: center;
     width: 7vw;
 }
 @media (max-width: 768px) {
-    .logo-top-right {
-      width: 70px;
-      top: 15px;
-      right: 15px;
-    }
+  
     .Heading_temp-main-TD h1{
         font-size: 30px;
     }
     .Info_temp-main-TD{
         font-size: 1rem;
     }
+    .para-main-TD{
+      font-size: 1rem;
+    }
   }
-  
+  @media (max-width: 480px){
+    .logo-top-left  {
+      width: 100px;
+      top: 25px;
+      right: 25px;
+    }
+    .Heading_temp-main-TD h1{
+      font-size: 1.5rem;
+  }
+  }
+  @media (max-width: 320px){
+    .Heading_temp-main-TD h1{
+      font-size: 1rem;
+  }
+  .Info_temp-main-TD{
+    font-size: 0.5rem;
+}
+.para-main-TD{
+  font-size: 0.5rem;
+}
+  }

@@ -1,0 +1,15 @@
+.card:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  }
+  
+  .btn-primary {
+    background-color: #6c63ff;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #574fd6;
+  }
+  
